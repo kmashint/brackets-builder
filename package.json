@@ -1,10 +1,10 @@
 {
-    "name": "brackets-builder",
-    "title": "Brackets Builder",
-    "description": "Allow to run build programs (such as running Python/Ruby/Node/etc scripts) from Brackets and display results in panel. It is possible to create own build systems via 'Edit>Edit Builder' menu item and editing opened JSON-file (you need to restart Brackets). Press Ctrl(Cmd)-B to build current file.",
-    "homepage": "https://github.com/vhornets/brackets-builder",
-    "version": "0.0.5",
-    "author": "Vhornets<vhornets@gmail.com>",
+    "name": "brackets-builder-extended",
+    "title": "Brackets Builder Extended",
+    "description": "Allow to run build programs (such as running Bash/NodeJS/Python/Ruby/etc. scripts) from Brackets and display results in panel. It is possible to create own build systems via 'Edit>Edit Builder' menu item and editing opened JSON-file (you need to restart Brackets). Press Ctrl(Cmd)-B to build current file.  Extended from https://github.com/vhornets/brackets-builder.",
+    "homepage": "https://github.com/kmashint/brackets-builder",
+    "version": "0.0.6",
+    "author": "Vhornets<vhornets@gmail.com>, Kmashint<kmashint@yahoo.com>",
     "files": [
         "main.js",
         "domain.js",
@@ -13,6 +13,6 @@
         "README.md",
         "builder.json"
     ],
-    "contributors": ["Vhornets", "rwinzcyruz", "IonicaBizau"],
-    "keywords": ["builder"]
+    "contributors": ["Vhornets", "rwinzcyruz", "IonicaBizau", "Kmashint"],
+    "keywords": ["builder","build"]
 }
