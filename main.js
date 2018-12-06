@@ -88,7 +88,9 @@ define(function (require, exports, module) {
 
         CommandManager.register('Handling Build', 'builder.build', handle);
 
-        KeyBindingManager.addBinding('builder.build', 'Ctrl-Alt-B');
+        KeyBindingManager.addBinding('builder.build', 'Ctrl-Shift-B');
+        KeyBindingManager.addBinding('builder.build', 'Ctrl-Shift-N');
+        
 
         // Add menu item to edit .json file
         var menu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
