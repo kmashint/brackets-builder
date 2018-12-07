@@ -18,7 +18,7 @@ define(function (require, exports, module) {
         DocumentManager     = brackets.getModule("document/DocumentManager"),
         KeyBindingManager   = brackets.getModule('command/KeyBindingManager'),
         FileUtils           = brackets.getModule("file/FileUtils"),
-        PanelManager        = brackets.getModule("view/PanelManager"),
+        PanelManager        = brackets.getModule("view/WorkspaceManager"),
         Dialogs             = brackets.getModule("widgets/Dialogs"),
         nodeConnection      = new NodeConnection(),
         domainPath          = ExtensionUtils.getModulePath(module) + "domain";
@@ -88,7 +88,9 @@ define(function (require, exports, module) {
 
         CommandManager.register('Handling Build', 'builder.build', handle);
 
-        KeyBindingManager.addBinding('builder.build', 'Ctrl-Alt-B');
+        KeyBindingManager.addBinding('builder.build', 'Ctrl-Shift-B');
+        KeyBindingManager.addBinding('builder.build', 'Ctrl-Shift-N');
+        
 
         // Add menu item to edit .json file
         var menu = Menus.getMenu(Menus.AppMenuBar.EDIT_MENU);
